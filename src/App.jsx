@@ -26,7 +26,7 @@ to-[#334155] py-8 px-18 rounded-lg">
         <fieldset className="fieldset">
           <legend className="fieldset-legend">Enter Text or URL</legend>
           <input id="input"
-          type="text" value={Text} onChange={(e)=>setText(e.target.value)} className="input w-54 bg-white focus:outline-none focus:border-2 text-gray-700" placeholder="Type here" />
+          type="text" value={Text} onChange={(e)=>setText(e.target.value)} className="input w-54 bg-white focus:outline-none focus:border-2 text-gray-700" placeholder="Type here" autoComplete="off"/>
         </fieldset>
         {Qr && <img src={Qr} alt="QR Code" className="mx-auto p-2 bg-white rounded-lg" />}
         <button onClick={()=>(QrGenerator(Text))} className="btn btn-dash btn-success min-w-54">Generate QR</button>
