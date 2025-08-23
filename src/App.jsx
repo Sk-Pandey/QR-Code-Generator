@@ -50,7 +50,7 @@ const App = () => {
             type="text"
             value={Text}
             onChange={(e) => setText(e.target.value)} // update state on input change
-            className="input w-54 mx-auto bg-white focus:outline-none focus:border-2 text-gray-700"
+            className="input w-54  bg-white focus:outline-none focus:border-2 text-gray-700"
             placeholder="Type here"
             autoComplete="off"
           />
@@ -68,7 +68,7 @@ const App = () => {
         {/* Button to generate QR */}
         <button
           onClick={() => QrGenerator(Text)}
-          className="btn btn-dash btn-success w-54 mx-auto"
+          className="btn btn-dash btn-success w-54 "
         >
           Generate QR
         </button>
